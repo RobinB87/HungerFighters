@@ -9,12 +9,14 @@ public abstract class BaseFighter {
     private int health;
     private boolean isAlive = true;
     private String gender = "";
+    private int attackPower;
 
-    public BaseFighter(String name, int health, boolean isAlive, String gender) {
+    public BaseFighter(String name, int health, boolean isAlive, String gender, int attackPower) {
         this.name = name;
         this.health = health;
         this.isAlive = isAlive;
         this.gender = gender;
+        this.attackPower = attackPower;
     }
 
     public String getName() {
@@ -47,5 +49,13 @@ public abstract class BaseFighter {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
     }
 }

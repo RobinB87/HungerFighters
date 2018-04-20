@@ -1,6 +1,8 @@
 package HungerFighters;
 
-import HungerFighters.print.Print;
+import HungerFighters.models.FightClass;
+import HungerFighters.print.PrintCareerFighters;
+import HungerFighters.print.PrintDistrictFighters;
 
 public class App {
 
@@ -11,15 +13,16 @@ public class App {
             System.out.println("Welcome to the arena! It's clobbering time!!");
             System.out.println("");
 
-            System.out.println("The fighters in the tournament are: ");
-//            CreateFighter createFighter = new CreateFighter();
-//            createFighter.CreateMaleFighter();
-//            createFighter.printFighter();
+            PrintDistrictFighters printDistrictFighters = new PrintDistrictFighters();
+            PrintCareerFighters printCareerFighters = new PrintCareerFighters();
+            printDistrictFighters.printDistrictFighters();
+            printCareerFighters.printCareerFighters();
 
-            Print print = new Print();
-            print.printFighters();
+            System.out.println("");
 
+            FightClass fightClass = new FightClass();
 
+            fightClass.firstFight();
         }
     }
 }
