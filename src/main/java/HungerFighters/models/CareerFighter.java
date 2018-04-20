@@ -2,18 +2,28 @@ package HungerFighters.models;
 
 public class CareerFighter extends BaseFighter {
 
-    private String career = "";
+    boolean battleItem = true;
+    boolean attackBonus = true;
 
-    public CareerFighter(String name, int health, boolean isAlive, String gender, String career){
+    public CareerFighter(String name, int health, boolean isAlive, String gender, boolean battleItem, boolean attackBonus) {
         super(name, health, isAlive, gender);
-        this.career = career;
+        this.battleItem = battleItem;
+        this.attackBonus = attackBonus;
     }
 
-    public String getCareer() {
-        return career;
+    public boolean isBattleItem() {
+        return battleItem;
     }
 
-    public void setCareer(String career) {
-        this.career = career;
+    public void setBattleItem(boolean battleItem) {
+        this.battleItem = battleItem;
+    }
+
+    public boolean isAttackBonus() {
+        return attackBonus;
+    }
+
+    public void setAttackBonus(boolean attackBonus) {
+        this.attackBonus = attackBonus;
     }
 }

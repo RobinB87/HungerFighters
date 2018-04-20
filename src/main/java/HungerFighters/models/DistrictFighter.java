@@ -2,18 +2,11 @@ package HungerFighters.models;
 
 public class DistrictFighter extends BaseFighter {
 
-    private String district = "";
+    boolean bonusDefence = true;
 
-    public DistrictFighter(String name, int health, boolean isAlive, String gender, String district){
+    public DistrictFighter(String name, int health, boolean isAlive, String gender, boolean bonusDefence){
         super(name, health, isAlive, gender);
-        this.district = district;
+        this.bonusDefence = bonusDefence;
     }
 
-    public String getDistrict() {
-        return district;
-    }
-
-    public void setDistrict(String district) {
-        this.district = district;
-    }
 }

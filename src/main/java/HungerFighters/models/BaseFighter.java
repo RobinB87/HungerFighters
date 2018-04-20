@@ -1,6 +1,6 @@
 package HungerFighters.models;
 
-public class BaseFighter {
+public abstract class BaseFighter {
 
     //type of district en gender een interface maken?
 
